@@ -42,4 +42,31 @@ setTimeout(() => {
   process.stdout.write('\r\|   ');
 }, 1700);
 
-// ... fill in the rest yourself ...
+
+
+//recursion method below:
+// const spinner = (amount) => {
+//   if(amount > 0){
+//     setTimeout(() => {
+//       process.stdout.write(`\r|     `);
+//     },100);
+
+//     setTimeout(() => {
+//       process.stdout.write(`\r/     `);
+//     },300);
+
+//     setTimeout(() => {
+//       process.stdout.write(`\r-     `);
+//     },500);
+
+//     setTimeout(() => {
+//       process.stdout.write(`\r\\    `);
+//     },700);
+    
+//     setTimeout(() => {
+//       spinner(amount - 1);
+//     },700);
+//   }
+// }
+
+// spinner(2);
